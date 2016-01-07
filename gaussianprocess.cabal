@@ -1,0 +1,24 @@
+name:                gaussianprocess
+version:             0.1.0.0
+synopsis:            Simle gaussian process
+description:         Please see README.md
+homepage:            http://github.com/jim-holmstroem/gaussianprocess#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Jim Holmström
+maintainer:          jim.holmstroem@gmail.com
+copyright:           2016 Jim Holmström
+category:            Math
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable gaussianprocess
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       hmatrix >= 0.16 && < 0.17,
+                       hmatrix-gsl >= 0.16 && < 0.17,
+                       hmatrix-special >= 0.3 && < 0.4,
+                       statistics >= 0.13 && < 0.14,
+                       mwc-random >= 0.13 && < 0.14
